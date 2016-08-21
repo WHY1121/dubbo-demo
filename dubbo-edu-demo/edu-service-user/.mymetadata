@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="edu-service-user"
+  id="myeclipse.1374461123925"
+  context-root="/gw-service-user"
+  j2ee-spec="6.0"
+  archive="edu-service-user.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,29 @@
+#surefire
+#Mon Jul 11 00:42:52 CST 2016
+testClassesDirectory=E\:\\woekspace1\\edu-facade-user\\target\\test-classes
+classPathUrl.4=D\:\\java\\apache-maven-3.3.3\\localRepository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar
+classPathUrl.3=D\:\\java\\apache-maven-3.3.3\\localRepository\\junit\\junit\\4.11\\junit-4.11.jar
+classPathUrl.2=D\:\\java\\apache-maven-3.3.3\\localRepository\\wusc\\edu\\common\\edu-common\\1.0-SNAPSHOT\\edu-common-1.0-SNAPSHOT.jar
+useManifestOnlyJar=true
+classPathUrl.1=E\:\\woekspace1\\edu-facade-user\\target\\classes
+reportsDirectory=E\:\\woekspace1\\edu-facade-user\\target\\surefire-reports
+classPathUrl.0=E\:\\woekspace1\\edu-facade-user\\target\\test-classes
+dirscanner.0=directoryScannerOptions
+providerConfiguration=org.apache.maven.surefire.junit4.JUnit4Provider
+testSuiteDefinitionTestSourceDirectory=E\:\\woekspace1\\edu-facade-user\\src\\test\\java
+surefireClassPathUrl.1=D\:\\java\\apache-maven-3.3.3\\localRepository\\org\\apache\\maven\\surefire\\surefire-api\\2.7.1\\surefire-api-2.7.1.jar
+surefireClassPathUrl.0=D\:\\java\\apache-maven-3.3.3\\localRepository\\org\\apache\\maven\\surefire\\surefire-junit4\\2.7.1\\surefire-junit4-2.7.1.jar
+report.2=org.apache.maven.surefire.report.XMLReporter
+useSystemClassLoader=true
+report.1=org.apache.maven.surefire.report.BriefFileReporter
+report.0=org.apache.maven.surefire.report.ForkingConsoleReporter
+excludes0=**/*$*
+isTrimStackTrace=true
+dirscanner.0.params=E\:\\woekspace1\\edu-facade-user\\target\\test-classes|[**/Test*.java, **/*Test.java, **/*TestCase.java]|[**/*$*]
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+includes0=**/Test*.java
+childDelegation=false

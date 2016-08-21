@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Built-By: Administrator
+Build-Jdk: 1.6.0_13
+Class-Path: . lib/pay-common-1.0-SNAPSHOT.jar lib/serializer-2.7.1.jar
+  lib/fastjson-1.1.41.jar lib/antlr-2.7.6.jar lib/aopalliance-1.0.jar 
+ lib/cglib-2.2.2.jar lib/asm-3.3.1.jar lib/json-lib-2.3-jdk15.jar lib/
+ ognl-3.0.6.jar lib/oro-2.0.8.jar lib/commons-beanutils-1.8.0.jar lib/
+ commons-codec-1.8.jar lib/commons-collections-3.2.jar lib/commons-dig
+ ester-2.0.jar lib/commons-fileupload-1.3.1.jar lib/commons-io-2.0.1.j
+ ar lib/commons-lang-2.5.jar lib/commons-lang3-3.1.jar lib/commons-log
+ ging-1.1.3.jar lib/commons-validator-1.1.4.jar lib/dom4j-1.6.1.jar li
+ b/xml-apis-1.0.b2.jar lib/ezmorph-1.0.6.jar lib/javassist-3.12.1.GA.j
+ ar lib/log4j-1.2.17.jar lib/slf4j-api-1.7.5.jar lib/slf4j-log4j12-1.7
+ .5.jar lib/jxl-2.6.12.jar lib/httpclient-4.3.3.jar lib/httpcore-4.3.2
+ .jar lib/commons-httpclient-3.1.jar lib/jedis-2.4.2.jar lib/commons-p
+ ool2-2.0.jar lib/jdom-1.1.3.jar lib/jaxen-1.1.1.jar lib/jdom-1.0.jar 
+ lib/xercesImpl-2.6.2.jar lib/xom-1.0.jar lib/xmlParserAPIs-2.6.2.jar 
+ lib/jsch-0.1.50.jar lib/commons-net-3.2.jar lib/spring-aop-3.2.4.RELE
+ ASE.jar lib/spring-aspects-3.2.4.RELEASE.jar lib/spring-beans-3.2.4.R
+ ELEASE.jar lib/spring-context-3.2.4.RELEASE.jar lib/spring-expression
+ -3.2.4.RELEASE.jar lib/spring-context-support-3.2.4.RELEASE.jar lib/s
+ pring-core-3.2.4.RELEASE.jar lib/spring-jms-3.2.4.RELEASE.jar lib/spr
+ ing-oxm-3.2.4.RELEASE.jar lib/pay-common-config-main-1.0-SNAPSHOT.jar
+  lib/pay-common-core-1.0-SNAPSHOT.jar lib/jta-1.1.jar lib/spring-jdbc
+ -3.2.4.RELEASE.jar lib/spring-orm-3.2.4.RELEASE.jar lib/spring-tx-3.2
+ .4.RELEASE.jar lib/mybatis-3.2.2.jar lib/mybatis-spring-1.2.0.jar lib
+ /mysql-connector-java-5.1.32.jar lib/pay-facade-boss-1.0-SNAPSHOT.jar
+  lib/pay-facade-user-1.0-SNAPSHOT.jar lib/pay-facade-account-1.0-SNAP
+ SHOT.jar lib/pay-facade-settlement-1.0-SNAPSHOT.jar lib/pay-facade-fe
+ e-1.0-SNAPSHOT.jar lib/pay-facade-remit-1.0-SNAPSHOT.jar lib/pay-faca
+ de-bank-1.0-SNAPSHOT.jar lib/pay-facade-banklink-1.0-SNAPSHOT.jar lib
+ /pay-facade-cost-1.0-SNAPSHOT.jar lib/pay-facade-limit-1.0-SNAPSHOT.j
+ ar lib/spring-web-3.2.4.RELEASE.jar lib/netty-3.2.5.Final.jar lib/jav
+ assist-3.15.0-GA.jar lib/zookeeper-3.4.5.jar lib/jline-0.9.94.jar lib
+ /zkclient-0.3.jar lib/junit-4.11.jar lib/hamcrest-core-1.3.jar
+Main-Class: com.alibaba.dubbo.container.Main
+Created-By: Maven Integration for Eclipse
+

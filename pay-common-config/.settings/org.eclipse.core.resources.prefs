@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//deployEnv/main=UTF-8
+encoding//deployEnv/pay-backup/public_system.properties=UTF-8
+encoding//deployEnv/pay-backup/public_user.properties=UTF-8
+encoding//deployEnv/pay-dev/public_system.properties=UTF-8
+encoding//deployEnv/pay-dev/public_user.properties=UTF-8
+encoding//deployEnv/pay-product/public_system.properties=UTF-8
+encoding//deployEnv/pay-product/public_user.properties=UTF-8
+encoding//deployEnv/test-mysql/db.properties=UTF-8
+encoding//deployEnv/test-mysql/public_system.properties=UTF-8
+encoding//deployEnv/test-mysql/public_user.properties=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/resources/public_system.properties=UTF-8
+encoding//src/main/resources/public_user.properties=UTF-8
+encoding/<project>=UTF-8

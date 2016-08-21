@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="pay-web-boss">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/target/m2e-jee/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <dependent-module archiveName="pay-common-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-common/pay-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-common-config-main-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-common-config/pay-common-config">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-common-core-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-common-core/pay-common-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-common-web-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-common-web/pay-common-web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-account-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-account/pay-facade-account">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-bank-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-bank/pay-facade-bank">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-boss-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-boss/pay-facade-boss">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-fee-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-fee/pay-facade-fee">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-settlement-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-settlement/pay-facade-settlement">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-payrule-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-payrule/pay-facade-payrule">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-cost-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-cost/pay-facade-cost">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-limit-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-limit/pay-facade-limit">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-trade-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-trade/pay-facade-trade">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-banklink-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-banklink/pay-facade-banklink">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-notify-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-notify/pay-facade-notify">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-remit-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-remit/pay-facade-remit">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-report-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-report/pay-facade-report">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pay-facade-user-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-user/pay-facade-user">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/pay-web-boss/src/main/webapp/WEB-INF/classes"/>
+        <property name="context-root" value="/pay-web-boss"/>
+    </wb-module>
+</project-modules>

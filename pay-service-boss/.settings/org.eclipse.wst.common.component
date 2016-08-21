@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="pay-service-boss">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <dependent-module archiveName="pay-facade-boss-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pay-facade-boss/pay-facade-boss">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/pay-service-boss/src/main/webapp/WEB-INF/classes"/>
+        <property name="context-root" value="/pay-service-boss"/>
+    </wb-module>
+</project-modules>

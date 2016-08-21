@@ -1,0 +1,149 @@
+[INFO ][20150317 23:43:31,967][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@70964f92: startup date [Tue Mar 17 23:43:31 CST 2015]; root of context hierarchy
+[INFO ][20150317 23:43:32,038][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20150317 23:43:32,288][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mq.xml]
+[INFO ][20150317 23:43:32,317][DefaultListableBeanFactory:665] Overriding bean definition for bean 'consumerSessionAwareMessageListener': replacing [Generic bean: class [wusc.edu.demo.mqtest.ConsumerSessionAwareMessageListener]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\WorkSpaceSpr10.6\edu-demo-mqconsumer\target\classes\wusc\edu\demo\mqtest\ConsumerSessionAwareMessageListener.class]] with [Generic bean: class [com.gw.app.notify.message.ConsumerSessionAwareMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-mq.xml]]
+[INFO ][20150317 23:43:32,318][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mail.xml]
+[INFO ][20150317 23:43:32,488][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20150317 23:43:32,489][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[INFO ][20150317 23:43:32,549][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5712998a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mailBiz,consumerSessionAwareMessageListener,mqConsumer,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate,sessionAwareQueue,sessionAwareListenerContainer,mailSender,simpleMailMessage,threadPool,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20150317 23:43:32,564][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5712998a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mailBiz,consumerSessionAwareMessageListener,mqConsumer,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate,sessionAwareQueue,sessionAwareListenerContainer,mailSender,simpleMailMessage,threadPool,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][20150317 23:43:32,564][MQConsumerTest:24] ==>MQ context start error:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mailBiz': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.mail.javamail.JavaMailSender wusc.edu.demo.mqtest.biz.MailBiz.mailSender; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.gw.app.notify.message.ConsumerSessionAwareMessageListener] for bean with name 'consumerSessionAwareMessageListener' defined in class path resource [spring/spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+Related cause: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.gw.app.notify.message.ConsumerSessionAwareMessageListener] for bean with name 'consumerSessionAwareMessageListener' defined in class path resource [spring/spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+Related cause: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.gw.app.notify.message.ConsumerSessionAwareMessageListener] for bean with name 'consumerSessionAwareMessageListener' defined in class path resource [spring/spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at wusc.edu.demo.mqtest.MQConsumerTest.main(MQConsumerTest.java:21)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.mail.javamail.JavaMailSender wusc.edu.demo.mqtest.biz.MailBiz.mailSender; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.gw.app.notify.message.ConsumerSessionAwareMessageListener] for bean with name 'consumerSessionAwareMessageListener' defined in class path resource [spring/spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 13 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.gw.app.notify.message.ConsumerSessionAwareMessageListener] for bean with name 'consumerSessionAwareMessageListener' defined in class path resource [spring/spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1275)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:355)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:334)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:897)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:260)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:416)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1296)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1267)
+	... 24 more
+Related cause:
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.gw.app.notify.message.ConsumerSessionAwareMessageListener] for bean with name 'consumerSessionAwareMessageListener' defined in class path resource [spring/spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1275)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:355)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:326)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:73)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:276)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:890)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:448)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at wusc.edu.demo.mqtest.MQConsumerTest.main(MQConsumerTest.java:21)
+Caused by: java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:260)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:416)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1296)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1267)
+	... 23 more
+Related cause:
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.gw.app.notify.message.ConsumerSessionAwareMessageListener] for bean with name 'consumerSessionAwareMessageListener' defined in class path resource [spring/spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1275)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:355)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:326)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:90)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:87)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:276)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:890)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:448)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at wusc.edu.demo.mqtest.MQConsumerTest.main(MQConsumerTest.java:21)
+Caused by: java.lang.ClassNotFoundException: com.gw.app.notify.message.ConsumerSessionAwareMessageListener
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:260)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:416)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1296)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1267)
+	... 22 more
+[INFO ][20150317 23:47:02,601][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e633589: startup date [Tue Mar 17 23:47:02 CST 2015]; root of context hierarchy
+[INFO ][20150317 23:47:02,659][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20150317 23:47:02,901][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mq.xml]
+[INFO ][20150317 23:47:02,944][DefaultListableBeanFactory:665] Overriding bean definition for bean 'consumerSessionAwareMessageListener': replacing [Generic bean: class [wusc.edu.demo.mqtest.ConsumerSessionAwareMessageListener]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\WorkSpaceSpr10.6\edu-demo-mqconsumer\target\classes\wusc\edu\demo\mqtest\ConsumerSessionAwareMessageListener.class]] with [Generic bean: class [wusc.edu.demo.mqtest.ConsumerSessionAwareMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-mq.xml]]
+[INFO ][20150317 23:47:02,946][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mail.xml]
+[INFO ][20150317 23:47:03,104][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20150317 23:47:03,104][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[INFO ][20150317 23:47:03,158][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@367b709b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mailBiz,consumerSessionAwareMessageListener,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate,sessionAwareQueue,sessionAwareListenerContainer,mailSender,simpleMailMessage,threadPool,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20150317 23:47:03,268][ExecutorConfigurationSupport:154] Initializing ExecutorService  'threadPool'
+[INFO ][20150317 23:47:03,401][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20150317 23:47:03,591][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:2011-20141111JF-50494-1426607223469-1:1,clientId=null,started=false}] }
+[INFO ][20150317 23:47:03,647][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20150317 23:47:03,731][ConsumerSessionAwareMessageListener:45] ==>receive message:{"content":"通过ActiveMQ异步发送邮件！","subject":"ActiveMQ测试","to":"wu-sc@foxmail.com"}
+[INFO ][20150317 23:47:03,817][ConsumerSessionAwareMessageListener:45] ==>receive message:{"content":"通过ActiveMQ异步发送邮件！","subject":"ActiveMQ测试","to":"wu-sc@foxmail.com"}
+[INFO ][20150317 23:47:03,818][ConsumerSessionAwareMessageListener:45] ==>receive message:{"content":"通过ActiveMQ异步发送邮件！","subject":"ActiveMQ测试","to":"wu-sc@foxmail.com"}

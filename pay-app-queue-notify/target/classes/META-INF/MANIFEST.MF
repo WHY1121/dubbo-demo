@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Built-By: Administrator
+Build-Jdk: 1.6.0_13
+Class-Path: . lib/pay-common-config-main-1.0-SNAPSHOT.jar lib/pay-faca
+ de-notify-1.0-SNAPSHOT.jar lib/pay-common-1.0-SNAPSHOT.jar lib/serial
+ izer-2.7.1.jar lib/antlr-2.7.6.jar lib/cglib-2.2.2.jar lib/asm-3.3.1.
+ jar lib/json-lib-2.3-jdk15.jar lib/ognl-3.0.6.jar lib/oro-2.0.8.jar l
+ ib/commons-beanutils-1.8.0.jar lib/commons-codec-1.8.jar lib/commons-
+ collections-3.2.jar lib/commons-digester-2.0.jar lib/commons-fileuplo
+ ad-1.3.1.jar lib/commons-io-2.0.1.jar lib/commons-lang-2.5.jar lib/co
+ mmons-lang3-3.1.jar lib/commons-validator-1.1.4.jar lib/dom4j-1.6.1.j
+ ar lib/xml-apis-1.0.b2.jar lib/ezmorph-1.0.6.jar lib/javassist-3.12.1
+ .GA.jar lib/jxl-2.6.12.jar lib/httpclient-4.3.3.jar lib/httpcore-4.3.
+ 2.jar lib/commons-httpclient-3.1.jar lib/jedis-2.4.2.jar lib/commons-
+ pool2-2.0.jar lib/jdom-1.1.3.jar lib/jaxen-1.1.1.jar lib/jdom-1.0.jar
+  lib/xercesImpl-2.6.2.jar lib/xom-1.0.jar lib/xmlParserAPIs-2.6.2.jar
+  lib/jsch-0.1.50.jar lib/commons-net-3.2.jar lib/pay-facade-cost-1.0-
+ SNAPSHOT.jar lib/pay-facade-fee-1.0-SNAPSHOT.jar lib/pay-facade-remit
+ -1.0-SNAPSHOT.jar lib/pay-facade-bank-1.0-SNAPSHOT.jar lib/pay-facade
+ -banklink-1.0-SNAPSHOT.jar lib/pay-facade-account-1.0-SNAPSHOT.jar li
+ b/activemq-amqp-5.8.0.jar lib/activemq-broker-5.8.0.jar lib/activemq-
+ openwire-legacy-5.8.0.jar lib/proton-jms-0.3.0-fuse-2.jar lib/proton-
+ 0.3.0-fuse-2.jar lib/proton-api-0.3.0-fuse-2.jar lib/bcpkix-jdk15on-1
+ .47.jar lib/aopalliance-1.0.jar lib/fastjson-1.1.41.jar lib/activemq-
+ pool-5.8.0.jar lib/geronimo-jms_1.1_spec-1.1.1.jar lib/hawtbuf-1.9.ja
+ r lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar lib/geronimo-jta_1.
+ 0.1B_spec-1.0.1.jar lib/commons-pool-1.6.jar lib/log4j-1.2.17.jar lib
+ /slf4j-api-1.7.5.jar lib/slf4j-log4j12-1.7.5.jar lib/spring-jms-3.2.4
+ .RELEASE.jar lib/spring-aop-3.2.4.RELEASE.jar lib/spring-aspects-3.2.
+ 4.RELEASE.jar lib/spring-beans-3.2.4.RELEASE.jar lib/spring-context-3
+ .2.4.RELEASE.jar lib/spring-context-support-3.2.4.RELEASE.jar lib/spr
+ ing-core-3.2.4.RELEASE.jar lib/commons-logging-1.1.3.jar lib/spring-e
+ xpression-3.2.4.RELEASE.jar lib/spring-instrument-3.2.4.RELEASE.jar l
+ ib/spring-instrument-tomcat-3.2.4.RELEASE.jar lib/spring-jdbc-3.2.4.R
+ ELEASE.jar lib/spring-orm-3.2.4.RELEASE.jar lib/spring-oxm-3.2.4.RELE
+ ASE.jar lib/spring-tx-3.2.4.RELEASE.jar lib/spring-web-3.2.4.RELEASE.
+ jar lib/spring-webmvc-3.2.4.RELEASE.jar lib/spring-webmvc-portlet-3.2
+ .4.RELEASE.jar lib/mybatis-3.2.2.jar lib/mybatis-spring-1.2.0.jar lib
+ /netty-3.2.5.Final.jar lib/javassist-3.15.0-GA.jar lib/zookeeper-3.4.
+ 5.jar lib/jline-0.9.94.jar lib/zkclient-0.3.jar lib/okhttp-2.0.0-RC1.
+ jar lib/okio-1.0.0.jar lib/junit-4.11.jar lib/hamcrest-core-1.3.jar
+Main-Class: wusc.edu.pay.app.notify.App
+Created-By: Maven Integration for Eclipse
+
